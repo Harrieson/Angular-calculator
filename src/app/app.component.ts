@@ -14,7 +14,12 @@ export class AppComponent {
   onClick(val: string, type: any ) {
     if(type == 'number') {
       this.onNumberClick(val)
+    } else if ( type == 'function') {
+      this.onFunctionClick(val)
     }
+  }
+  onFunctionClick(val: string){
+
   }
   onNumberClick(val: string){
     if(this.calNumber !== 'noValue') {
